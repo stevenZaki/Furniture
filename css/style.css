@@ -1,0 +1,53 @@
+:root{
+    --main-color: #3b5d50;
+    --secondary-color: #f9bf29;
+}
+
+.header{
+    background-color: var(--main-color);
+    /* color: white; */
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.couch{
+    position: relative;
+}
+
+.couch::before{
+    content: " ";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/dots-light.svg);
+    position: absolute;
+    right: -75px;
+}
+
+.couch img{
+    position: absolute;
+    top: -50px;
+}
+
+@media screen and (max-width:1450px) {
+    .couch img{
+        position: static;
+        top: 0px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header{
+        text-align: center;
+    }
+    .couch img{
+        position: static;
+        top: 0px;
+        width: 400px;
+    }
+    .couch::before{
+        display: none;
+    }
+}
