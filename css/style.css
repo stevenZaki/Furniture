@@ -1,8 +1,37 @@
 :root{
     --main-color: #3b5d50;
     --secondary-color: #f9bf29;
+    --text-color: #ffffff88;
 }
 
+.navbar{
+    background-color: var(--main-color);
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+}
+.nav-link {
+    color: var(--text-color);
+    font-size: 20px;
+    position: relative;
+}
+
+.nav-link::before{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 80%;
+    transition: width 0.5s;
+
+}
+
+.nav-item:hover .nav-link::before{
+    width: 80%;
+}
 .header{
     background-color: var(--main-color);
     /* color: white; */
