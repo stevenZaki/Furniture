@@ -4,6 +4,8 @@
     --text-color: #ffffff88;
 }
 
+
+/* Start navbar section */
 .navbar{
     background-color: var(--main-color);
 }
@@ -32,6 +34,9 @@
 .nav-item:hover .nav-link::before{
     width: 80%;
 }
+/* End navbar section   */
+
+/* Start header section */
 .header{
     background-color: var(--main-color);
     /* color: white; */
@@ -56,7 +61,7 @@ h1{
 
 .couch img{
     position: absolute;
-    top: -50px;
+    top: -90px;
 }
 
 @media screen and (max-width:1450px) {
@@ -80,3 +85,35 @@ h1{
         display: none;
     }
 }
+/* End header section */
+
+
+/* Start Crafted section */
+
+@media screen and (max-width:800px) {
+    .crafted-text{
+        text-align: center;
+    }
+}
+.product-item{
+    position: relative;
+
+}
+
+.product-item::before{
+    content: " ";
+    position: absolute;
+    background-color: #7fa194;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: -1;
+    transition: 2s;
+}
+
+.product-animation:hover .product-item::before{
+    height: 60%;
+} 
+/* End cragted section */
