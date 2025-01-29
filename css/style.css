@@ -32,7 +32,7 @@
 }
 
 .nav-item:hover .nav-link::before{
-    width: 80%;
+    width: 65%;
 }
 /* End navbar section   */
 
@@ -208,4 +208,13 @@ span{
 .carousel-inner h5{
     padding-top: 10px;
 }
+
+.nav-item .nav-link{
+    color: black;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: var(--main-color);
+}
+
+
 /* End Testimonials */
