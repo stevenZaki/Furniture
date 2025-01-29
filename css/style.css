@@ -180,3 +180,32 @@ i::after{
     border-radius: 100%;
 }
 /* End Chose Us */
+
+/* Start Testimonials */
+.subject{
+    padding-top: 50px;
+
+}
+
+
+.carousel-inner{
+    width: 100%;
+    height: 280px;
+    /* background-color: green; */
+}
+span{
+    background-color: grey;
+    
+}
+.image{
+}
+.image img{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    
+}
+.carousel-inner h5{
+    padding-top: 10px;
+}
+/* End Testimonials */
